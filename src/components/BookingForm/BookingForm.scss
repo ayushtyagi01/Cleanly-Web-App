@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.booking-form {
+  .heading {
+    color: $light-text-color;
+    font-size: 1.2rem;
+    padding: 1%;
+  }
+  .btn-select {
+    padding: 2%;
+    background: transparent;
+    margin: 1% 5% 2% 1%;
+    border-radius: 10px;
+    border: 1px solid $light-text-color;
+    text-transform: uppercase;
+    width: 10rem;
+  }
+  .room-type-heading {
+    margin: 1% 5% 2% 1%;
+    font-size: 1.5rem;
+    padding: 2% 0;
+    border-top: 1px solid $light-text-color;
+    border-bottom: 1px solid $light-text-color;
+    width: 90%;
+  }
+  .room-type-container {
+    display: flex;
+    margin: 1% 5% 2% 1%;
+    .room-type {
+      border: 1px solid $light-text-color;
+      border-radius: 5px;
+      margin-right: 5rem;
+      .icon {
+        width: 20rem;
+        color: $light-text-color;
+        font-size: 5rem;
+        text-align: center;
+        img {
+          padding-top: 1rem;
+          width: 60%;
+        }
+      }
+      .type-name {
+        font-size: 1.5rem;
+        color: $light-text-color;
+        text-align: center;
+      }
+      .add-room {
+        display: flex;
+        width: 100%;
+        .btn-room {
+          width: 33.34%;
+          background: transparent;
+          border-style: none;
+          border-top: 1px solid $light-text-color;
+          border-right: 1px solid $light-text-color;
+          height: 3vh;
+        }
+      }
+    }
+  }
+
+  textarea {
+    width: 40%;
+    height: 150px;
+    margin: 1% 5% 2% 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .room-type-heading {
+    text-align: center;
+  }
+}

@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+
+.slot-container {
+  display: flex;
+  width: 100%;
+  margin: 1% 2% 2% 1%;
+  .slot-item {
+    width: 40%;
+    .heading {
+      color: $light-text-color;
+      font-size: 1.2rem;
+    }
+    .add-hour {
+      display: flex;
+      width: 40%;
+      padding: 1%;
+
+      .btn-room {
+        width: 33.34%;
+        background: transparent;
+        border-style: none;
+        border: 1px solid $light-text-color;
+        height: 3vh;
+      }
+      .date {
+        width: 70%;
+        background: transparent;
+        border-style: none;
+        border: 1px solid $light-text-color;
+        height: 3vh;
+      }
+    }
+  }
+}
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  .btn {
+    flex-basis: 15%;
+    padding: 2%;
+    background: transparent;
+    margin: 1% 2% 2% 1%;
+    border-radius: 10px;
+    border: 3px solid $light-text-color;
+    text-transform: uppercase;
+    width: 10rem;
+  }
+  .btn-selected {
+    border: 3px solid $primary-color;
+    flex-basis: 15%;
+    padding: 2%;
+    background: transparent;
+    margin: 1% 2% 2% 1%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 10rem;
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .slot-container {
+    flex-direction: column;
+    align-items: center;
+    .slot-item {
+      width: 80%;
+      .heading {
+        text-align: center;
+      }
+      .add-hour {
+        justify-content: center;
+        margin-right: 0;
+        padding-right: 0;
+        width: 100%;
+        .btn-room {
+          height: 4vh;
+        }
+        .date {
+          height: 4vh;
+        }
+      }
+    }
+  }
+  .time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+    .btn {
+      width: 80%;
+    }
+    .btn-selected {
+      width: 80%;
+    }
+  }
+}

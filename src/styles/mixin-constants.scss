@@ -1,0 +1,66 @@
+$primary-color: #6cc4d4;
+$grey-color: #636a6d;
+$light-grey-color: #ccc;
+$light-black-color: #545c6c;
+$background-color: hwb(180 98% 1%);
+$white-color: #fff;
+
+$UNIVERSAL-PADDING: 4rem;
+$UNIVERSAL-MARGIN: 4rem;
+
+$PRIMARY-COLOR: #6ac0d0;
+$BODY-BACKGROUND-COLOR: #f8fbfc;
+$TEXT-PRIMARY-COLOR: #414b5d;
+$TEXT-SECONDARY-COLOR: #bbc2cc;
+
+$WHITE: #ffffff;
+$GOLD: #f5c36f;
+$GREEN: #83bd56;
+
+
+@mixin heading {
+  color: $grey-color;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+@mixin heading-with-margin {
+  border-top: 0.05em solid $light-grey-color;
+  border-bottom: 0.05em solid $light-grey-color;
+  font-size: 1.5em;
+  color: $light-black-color;
+  font-weight: bold;
+  padding: 1em 0em 1em 0em;
+}
+
+@mixin border {
+  border: 0.1em solid $light-grey-color;
+  border-radius: 0.2em;
+}
+
+
+@mixin plain-text-font-style {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+
+@mixin form-input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 2px solid;
+  @include plain-text-font-style;
+  padding-left: 1rem;
+}
+
+@mixin horizontal-rule-line-desktop {
+  width: 100%;
+  color: lightgrey;
+  border :none;
+  border-top: 1px solid $light-grey-color;
+}
+@mixin horizontal-rule-line-mobile {
+width: 20rem;
+color: lightgrey;
+border: none;
+border-top: 1px solid $light-grey-color;
+}

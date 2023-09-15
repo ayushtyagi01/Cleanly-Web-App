@@ -1,0 +1,103 @@
+@import "../../styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.carddetails-head {
+  color: $light-text-color;
+  font-size: 1.2rem;
+  padding: 1%;
+}
+form {
+  .card-number {
+    width: 87%;
+    margin: 1% 2% 2% 1%;
+    .cardetails-input {
+      padding: 1rem;
+      width: 100%;
+      border: 3px solid $light-text-color;
+    }
+  }
+  .other-card-detail {
+    display: flex;
+    margin: 1% 2% 2% 1%;
+    width: 87%;
+    justify-content: space-between;
+    input {
+      padding: 1rem;
+      width: 29%;
+      border: 3px solid $light-text-color;
+    }
+  }
+
+  .personal-head {
+    color: $light-text-color;
+    font-size: 1.2rem;
+    padding: 1%;
+  }
+  .personal-detail {
+    width: 87%;
+    margin: 1% 2% 2% 1%;
+    display: flex;
+    justify-content: space-between;
+    input {
+      display: inline-block;
+      flex-basis: 48%;
+      padding: 1%;
+      border: 3px solid $light-text-color;
+    }
+    .address-input {
+      flex-basis: 58%;
+    }
+    .pin-input {
+      flex-basis: 38%;
+    }
+  }
+  input {
+    margin: 1% 0 2% 1%;
+  }
+  label {
+    padding-left: 0.5rem;
+  }
+  .submit-btn {
+    margin: 1% 0 2% 1%;
+    padding: 1rem;
+    width: 87%;
+    font-size: 2rem;
+    background-color: $btn-background-color;
+    color: $primary-text-color;
+    border-style: none;
+    border-radius: 5px;
+  }
+  .btn {
+    margin: 1% 0 2% 1%;
+    padding: 1rem;
+    width: 87%;
+    font-size: 2rem;
+    background-color: $disabled-btn;
+    color: $primary-text-color;
+    border-style: none;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    .personal-detail {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-right: 0;
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+    .btn {
+      font-size: 10%;
+      margin-left: 10%;
+      width: 80%;
+    }
+  }
+}

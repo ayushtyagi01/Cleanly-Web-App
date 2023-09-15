@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.room-type-container {
+  display: flex;
+  margin: 1% 2% 2% 1%;
+  .room-types {
+    border: 3px solid $light-text-color;
+    border-radius: 5px;
+    margin-right: 5%;
+    flex-basis: 40%;
+    margin-bottom: 2rem;
+    .icon {
+      color: $light-text-color;
+      font-size: 5rem;
+      text-align: center;
+      img {
+        padding-top: 1rem;
+        width: 60%;
+      }
+    }
+    .type-name {
+      font-size: 1.5rem;
+      color: $light-text-color;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+    }
+    .add-room {
+      display: flex;
+      width: 100%;
+      .btn-room {
+        width: 33.34%;
+        background: transparent;
+        border-style: none;
+        border-top: 3px solid $light-text-color;
+        border-right: 3px solid $light-text-color;
+        height: 4vh;
+        font-weight: bold;
+      }
+      .room-add {
+        border-right-style: none;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .room-type-container {
+    flex-direction: column;
+    align-items: center;
+    .room-types {
+      margin-right: 0;
+      width: 80%;
+    }
+  }
+}
